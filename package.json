@@ -1,0 +1,35 @@
+{
+  "name": "browser-tools-server",
+  "displayName": "Browser Tools Server",
+  "description": "This VSCode extension that starts @agentdeskai/browser-tools-server automatically with your VSCode workspace.",
+  "version": "0.0.1",
+  "publisher": "wrick17",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "browserTools.restartServer",
+        "title": "Restart Browser Tools Server"
+      }
+    ]
+  },
+  "scripts": {
+  },
+  "devDependencies": {
+    "vsce": "^2.10.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wrick17/browser-tools-server"
+  }
+}
